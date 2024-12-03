@@ -21,8 +21,8 @@ body{
 
 footer{
     background-color: var(--colorrojomodooscuro2);
-    padding: 10px;
-    /* position: relative; */
+    padding: 5px;
+    margin-top: 20px;
     width: 100%;
     /* bottom: 0; */
     h2{
@@ -77,10 +77,11 @@ main{
         line-height: 1.8;
 
     }
+  
 
     h3{
-        font-family: 'Times New Roman', Times, serif;
         font-size: 36px;
+
         text-align: center;
         color: var(--colorrojomodooscuro2);
     }
@@ -115,19 +116,20 @@ main{
 
             text-align: center;
         }
-      .imagenes{
-
-        width: 240px;
-        margin-top: 50px; 
-        justify-content: center;
-            
-        img{
+        .imagenes {
+            width: 240px;
+            margin-top: 50px;
             display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+        
+        .imagenes img {
+            display: block; 
             width: 100%;
             border-radius: 5px;
-            
         }
-      }
+        
 
        
 
@@ -144,6 +146,7 @@ main{
         border-radius: 5%;
         flex-direction: row;
         margin-left: 20px;
+        
       
         .redes_socialess{
 
@@ -152,12 +155,47 @@ main{
             height: 300px;
             border-radius: 2%;
             background-color: white;
+            justify-content: center;
+           
+            
         }
 
-        .redes_sociales{
+        .redes_sociales a{
 
-            text-align: center;
+            font-size: 90px;
+            gap: 90px;
+            margin-left: 40px;
+            justify-content: center;
+            transition: all ease 200ms;
         }
+
+        .redes_sociales a :hover{
+
+            transform: scale(1.2);
+        }
+
+        .linkedin{
+
+            color:  #0A66C2;
+        }
+
+        .whatsapp{
+            color: #25D366;
+        }
+
+        .phone{
+
+            color: green;
+        }
+        .facebook{
+            color: #4267B2;
+        }
+
+        .insta{
+            color: #FD1D1D;
+        }
+
+
 
         .correos{
             margin-top: 3%;
@@ -177,7 +215,7 @@ main{
 
 
         
-        .servicioss{
+        .servicios{
 
             margin-top: 3%;
             display: flex;
@@ -186,6 +224,10 @@ main{
             border-radius: 2%;
             background-color: white;
             
+        }
+
+        .servicioss{
+            text-align: center;
 
         
         }
@@ -196,3 +238,6 @@ main{
 
    
 }
+
+
+

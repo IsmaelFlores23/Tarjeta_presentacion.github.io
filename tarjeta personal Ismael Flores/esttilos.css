@@ -5,6 +5,14 @@
     --colorrojomodooscuro3: #ff7673;
     --colornegromodooscuro: #191919;
     --colorgresimodooscuro: #404040;
+    --colorblanco: #f1f1f1;
+
+
+    --colorPrimario:#E23636;
+    --colorSecundario:#518CCA;
+    --colorFondo:#f4f4f4;
+    --colorTarjeta:#FFFFFF;
+    --colorTextoTarjeta:#000;
 
 }
 
@@ -69,12 +77,25 @@ h1{
 
 main{
 
+    .btnDark{
+        background-color: var(--colorrojomodooscuro1);
+        padding: 10px;
+        border-radius: 15%;
+        width: 80px;
+        height: 50px;
+        color: white;
+        box-shadow: 1px 1px 1px black;
+        
+       
+    }
+
    
 
     p{
         font-size: 18px;
         font-weight: lighter;
         line-height: 1.8;
+        color: #f4f4f4;
 
     }
   
@@ -84,6 +105,13 @@ main{
 
         text-align: center;
         color: var(--colorrojomodooscuro2);
+    }
+
+    h4{
+        font-size: 28px;
+        text-align: center;
+        color: var(--colorrojomodooscuro2);
+
     }
 
     .contenedor_padre{
@@ -111,6 +139,7 @@ main{
        margin-top: 1%;
         border-radius: 5%;
         flex-direction: row;
+       
 
         .mi{
 
@@ -139,7 +168,7 @@ main{
         margin-top: 1%;
         display: inline-block ;
         justify-content: space-between;
-        background-color: var(--colornegromodooscuro);
+        background-color: var(--colorFondo);
         width: 900px;
         height: 950px;
         padding: 60px;
@@ -154,7 +183,7 @@ main{
             width: 900px;
             height: 300px;
             border-radius: 2%;
-            background-color: white;
+            background-color: var(--colornegromodooscuro);
             justify-content: center;
            
             
@@ -168,6 +197,8 @@ main{
             justify-content: center;
             transition: all ease 200ms;
         }
+
+       
 
         .redes_sociales a :hover{
 
@@ -203,7 +234,8 @@ main{
             width: 900px;
             height: 300px;
             border-radius: 2%;
-            background-color: white;
+            background-color: var(--colornegromodooscuro);
+            text-align: center;
 
 
         }
@@ -220,14 +252,15 @@ main{
             margin-top: 3%;
             display: flex;
             width: 900px;
-            height: 300px;
+            height: 600px;
             border-radius: 2%;
-            background-color: white;
+            background-color:var(--colornegromodooscuro);
             
         }
 
         .servicioss{
-            text-align: center;
+            font-size: 22px;
+            
 
         
         }
@@ -239,5 +272,72 @@ main{
    
 }
 
+@media (max-width:768px) {
+
+    
+
+    header{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        nav{
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            background-color: var(--colorPrimario);
+            position: relative;
+            top: 20px;
+            a{
+                width: 100%;
+                border-top: 1px solid white;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+        }
+    }
+
+  
+}
 
 
+
+@media (max-width:350px){
+
+    .contenedor_padre{
+
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        height: 950px;
+        padding: 60px;
+        border-radius: 5%;
+        flex-direction: column;
+        
+    }
+    
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        height: 950px;
+        padding: 60px;
+        border-radius: 5%;
+        flex-direction: column;
+        
+    }
+    
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        height: 950px;
+        padding: 60px;
+        border-radius: 5%;
+        flex-direction: column;
+        
+    }
+    
+    
+}
